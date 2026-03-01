@@ -1,0 +1,215 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@700&display=swap');
+
+
+.verify-title{
+  display: block;
+  font-size: 35px;
+  float: left;
+}
+.success{ 
+  display: block;
+  min-width: 350px;
+  font-size: 17px;
+  float: left;
+  margin-left:  -25px;
+  color: #5372F0;
+}
+.alertVerification{
+  float: left;
+  text-align: center;
+  display: block;
+  font-size: 17px;
+  margin-left: -15px;
+  color: #ff6b00;
+
+}
+.forgot-text{
+
+  font-size: 35px;
+  text-align: center;
+
+}
+
+.verify-back{
+  width: 100%;
+  margin-top: -31px;
+  float: left;
+ display: block;
+ color: #aaa;
+}
+.verify-back:hover{
+  text-decoration: underline;
+}
+.verify  {
+  display: block;
+  font-family: 'Noto Sans Khmer', sans-serif;
+  width: 95px;
+  padding: 8px;
+  background-color: #ff6b00;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  color: #111;
+  border: solid 1px #ff6b00;
+  font-weight: 700;
+  margin: auto 0;
+  margin-top: 7.8rem;
+}
+.verify:hover{
+  cursor: pointer;
+}
+/* form */
+form{
+  width: 380px;
+  height: 70vh;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+
+
+form .field{
+width: 100%;
+height: 55px;
+margin-bottom: 20px;
+}
+form .field.shake{
+animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+0%, 100%{
+  margin-left: 0px;
+}
+20%, 80%{
+  margin-left: -12px;
+}
+40%, 60%{
+  margin-left: 12px;
+}
+}
+form .field .input-area{
+height: 50px;
+width: 100%;
+position: relative;
+}
+form input{
+  padding: 0px 45px;
+  height: 45px;
+  display: block;
+  font-size: 18px;
+  background: transparent;
+  color: #aaa;
+  border: solid 1px #aaa;
+  border-radius: 0%;
+  transition: all 0.2s ease;
+  font-family: 'Noto Sans Khmer', sans-serif;
+}
+form .field input:focus,
+form .field.valid input{
+transition: all 0.2s ease;
+border: solid 1px #aaa;
+}
+form .field.shake input,
+form .field.error input{
+border-color: #dc3545;
+
+}
+.field .input-area i{
+position: absolute;
+top: 50%;
+font-size: 18px;
+pointer-events: none;
+transform: translateY(-50%);
+}
+.input-area .icon{
+left: 15px;
+color: #aaa;
+transition: color 0.2s ease;
+}
+.input-area .error-icon{
+right: 15px;
+color: #dc3545;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+color: #aaa;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+color: #aaa;
+}
+form input::placeholder{
+color: #aaa;
+font-size: 17px;
+}
+form .field .error-txt{
+color: #dc3545;
+text-align: left;
+margin-top: 5px;
+}
+form .field .error{
+display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+display: block;
+}
+form .pass-txt {
+text-align: left;
+margin-top: -10px;
+font-size: 15px;
+color: #aaa;
+
+}
+form .pass-txt:hover{
+text-decoration: underline;
+}
+form .sign-txt{
+text-align: left;
+margin-top: -3px;
+font-size: 15px;
+color: #aaa;
+bottom: 5px;
+}
+.sign-txt a{
+color: #ff6b00;
+}
+.sign-txt a:hover{
+text-decoration: underline;
+}
+.wrapper a{
+color: #aaa;
+text-decoration: none;
+}
+.wrapper a:hover{
+text-decoration: underline;
+}
+form input[type="submit"]{
+height: 50px;
+margin-top: 30px;
+color: #aaa;
+padding: 0;
+border: none;
+background: #5372F0;
+cursor: pointer;
+border-bottom: 2px solid rgba(0,0,0,0.1);
+transition: all 0.3s ease;
+font-family: 'Noto Sans Khmer', sans-serif;
+}
+form input[type="submit"]:hover{
+background: #111;
+}

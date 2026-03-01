@@ -1,0 +1,822 @@
+    :root {
+                --primary-color: #0c55aa;
+                --secondary-color: #821f40;
+                --primary-color-rgb: 12,85,170;
+                --tp-theme-secondary: #821f40;
+                --footer-background-color: #fff;
+                --footer-text-color: #010f1c;
+                --footer-title-color: #010f1c;
+                --footer-link-color: #010f1c;
+                --footer-link-hover-color: #0989ff;
+                --footer-border-color: #e5e6e8;
+                --header-menu-text-hover-color: #0989ff;
+                --header-main-text-hover-color: #0989ff;
+                --header-sticky-background-color: #fff;
+                --header-sticky-text-color: #010f1c;
+                --header-sticky-text-hover-color: #0989ff;
+            }
+  
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmsu5fcrc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmsu5fabc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmsu5fcbc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmsu5fbxc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmsu5fcxc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmsu5fchc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmsu5fbbc4amp6lq.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfomcnqeu92fr1mu72xkktu1kvnz.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfomcnqeu92fr1mu5mxkktu1kvnz.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfomcnqeu92fr1mu7mxkktu1kvnz.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfomcnqeu92fr1mu4wxkktu1kvnz.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfomcnqeu92fr1mu7wxkktu1kvnz.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfomcnqeu92fr1mu7gxkktu1kvnz.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfomcnqeu92fr1mu4mxkktu1kg.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmeu9fcrc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmeu9fabc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmeu9fcbc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmeu9fbxc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmeu9fcxc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmeu9fchc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmeu9fbbc4amp6lq.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmwulfcrc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmwulfabc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmwulfcbc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmwulfbxc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmwulfcxc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmwulfchc4amp6lbbp.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://shofy.botble.com/storage/fonts/0fc20595eb/srobotov30kfolcnqeu92fr1mmwulfbbc4amp6lq.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+     
+            :root {
+                --primary-font: "Roboto", sans-serif;
+                --body-size: 14px;
+                --h1-size: 36px;
+                --h2-size: 32px;
+                --h3-size: 28px;
+                --h4-size: 24px;
+                --h5-size: 20px;
+                --h6-size: 16px;
+            }
+
+            h1 {
+                font-size: var(--h1-size);
+            }
+
+            h2 {
+                font-size: var(--h2-size);
+            }
+
+            h3 {
+                font-size: var(--h3-size);
+            }
+
+            h4 {
+                font-size: var(--h4-size);
+            }
+
+            h5 {
+                font-size: var(--h5-size);
+            }
+
+            h6 {
+                font-size: var(--h6-size);
+            }
+
+            body {
+                font-size: var(--body-size);
+            }
+       
+            .page_speed_471930116 {
+                max-height: 35px !important;
+            }
+
+            .page_speed_1488238351 {
+                height: 24px;
+                width: auto;
+            }
+
+            .page_speed_109694726 {
+                height: 16px;
+                width: auto;
+            }
+
+            .page_speed_374142780 {
+                --bottom-bar-menu-text-font-size: 13px;
+            }
+
+            .page_speed_163185292 {
+                background-color: #010f1c;
+                color: #fff
+            }
+
+            .page_speed_7175333 {
+                background-color: #fff;
+                color: rgb(1, 15, 28)
+            }
+
+            .page_speed_287955523 {
+                border-color: rgba(1, 15, 28, 0.1);
+            }
+
+            .page_speed_417241369 {
+                background-color: #fff;
+                color: #010f1c;
+                border-color: rgba(1, 15, 28, 0.1);
+            }
+
+            .page_speed_622148213 {
+                background-color: var(--header-sticky-background-color);
+                color: var(--header-sticky-text-color);
+            }
+
+            .page_speed_1775272568 {
+                background-image: url(https://shofy.botble.com/storage/main/general/breadcrumb.jpg);
+            }
+
+            .page_speed_740148828 {
+                max-width: 90px
+            }
+
+            .page_speed_907527750 {
+                display: none;
+            }
+
+            .page_speed_541081030 {
+                line-height: 20px;
+            }
+
+            .page_speed_2003431276 {
+                background-color: #5FB7D4 !important;
+            }
+
+            .page_speed_149821995 {
+                background-color: #333333 !important;
+            }
+
+            .page_speed_610250825 {
+                background-color: #DA323F !important;
+            }
+
+            .page_speed_2133558440 {
+                background-color: #2F366C !important;
+            }
+
+            .page_speed_1827615877 {
+                background-color: #87554B !important;
+            }
+
+            .page_speed_2124167400 {
+                display: inline-flex;
+                vertical-align: middle;
+            }
+
+            .page_speed_780865588 {
+                --bb-rating-size: 70px
+            }
+
+            .page_speed_1052410057 {
+                width: 55.6% !important;
+            }
+
+            .page_speed_1678127284 {
+                background-color: #AC2200 !important;
+            }
+
+            .page_speed_868026868 {
+                width: 54.2% !important;
+            }
+
+            .page_speed_1347395265 {
+                width: 40% !important;
+            }
+
+            .page_speed_645045250 {
+                width: 57.6% !important;
+            }
+
+            .page_speed_1866736840 {
+                background-color: #9A3B00 !important;
+            }
+
+            .page_speed_77059114 {
+                width: 62.6% !important;
+            }
+
+            .page_speed_377813688 {
+                width: 71.2% !important;
+            }
+
+            .page_speed_1363773618 {
+                width: 54% !important;
+            }
+
+            .page_speed_1428079720 {
+                width: 50% !important;
+            }
+
+            .page_speed_979547763 {
+                width: 64.4% !important;
+            }
+
+            .page_speed_2084161982 {
+                background-color: #006554 !important;
+            }
+
+            .page_speed_1999713765 {
+                width: 70% !important;
+            }
+
+            .page_speed_1464807229 {
+                width: 75.6% !important;
+            }
+
+            .page_speed_789439238 {
+                width: 77.6% !important;
+            }
+
+            .page_speed_1173582179 {
+                width: 37.2% !important;
+            }
+
+            .page_speed_731982499 {
+                width: 60% !important;
+            }
+
+            .page_speed_622994865 {
+                width: 46.6% !important;
+            }
+
+            .page_speed_2084301929 {
+                width: 75% !important;
+            }
+
+            .page_speed_1769621602 {
+                width: 55% !important;
+            }
+
+            .page_speed_1120117168 {
+                width: 62.8% !important;
+            }
+
+            .page_speed_1739510617 {
+                width: 56% !important;
+            }
+
+            .page_speed_819284021 {
+                width: 51.4% !important;
+            }
+
+            .page_speed_741968120 {
+                display: none
+            }
+
+            .page_speed_1736544150 {
+                max-height: 50px
+            }
+
+            .page_speed_401211670 {
+            }
+
+            .page_speed_949553305 {
+                background-color: #000;
+                color: #fff;
+            }
+
+            .page_speed_2020480047 {
+                max-width: 1170px;
+            }
+
+            .page_speed_394407768 {
+                background-color: #fff;
+                color: #000;
+                border: 1px solid #fff;
+            }
+
+            .page_speed_132966487 {
+                background-color: #000;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+                                           
+       
+      
+            .site-notice {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 8px;
+                z-index: 99999;
+                display: none;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .site-notice.site-notice--visible {
+                display: block;
+            }
+
+            .site-notice.site-notice-full-width .site-notice-body {
+                margin: 0 auto;
+            }
+
+            .site-notice.site-notice-minimal {
+                padding: 0;
+                right: unset;
+                border-radius: 5px;
+                bottom: 1em;
+                flex-direction: column;
+                left: 1em;
+            }
+
+            .site-notice.site-notice-minimal .site-notice-body {
+                margin: 0 16px 16px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                max-width: 400px !important;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+                padding: 4px;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__message {
+                font-size: 13px;
+                line-height: 1.5;
+                padding: 12px 12px 0;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__actions {
+                margin: 0;
+                padding: 8px 12px 12px;
+                justify-content: flex-end;
+                gap: 8px;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__actions button {
+                min-width: auto;
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__categories {
+                padding: 12px;
+                margin-top: 0;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__categories .cookie-category {
+                padding: 8px;
+                margin-bottom: 8px;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__categories .cookie-category:last-child {
+                margin-bottom: 0;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__categories .cookie-category__description {
+                font-size: 12px;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__categories .cookie-consent__save {
+                padding: 8px 0 0;
+                margin-top: 8px;
+            }
+
+            .site-notice.site-notice-minimal .site-notice__categories .cookie-consent__save .cookie-consent__save-button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+            .site-notice .site-notice-body {
+                padding: 8px 15px;
+                border-radius: 4px;
+            }
+
+            .site-notice .site-notice__inner {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .site-notice .site-notice__message {
+                margin: 0;
+                line-height: 1.4;
+                font-size: 14px;
+                flex: 1;
+                min-width: 200px;
+            }
+
+            .site-notice .site-notice__message a {
+                color: inherit;
+                text-decoration: underline;
+            }
+
+            .site-notice .site-notice__message a:hover {
+                text-decoration: none;
+            }
+
+            .site-notice .site-notice__categories {
+                display: none;
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .site-notice .site-notice__categories .cookie-category {
+                margin-bottom: 1rem;
+                padding: 0.75rem;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 4px;
+            }
+
+            .site-notice .site-notice__categories .cookie-category__label {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-bottom: 0.5rem;
+                cursor: pointer;
+            }
+
+            .site-notice .site-notice__categories .cookie-category__label input[type="checkbox"] {
+                margin: 0;
+                padding: 0;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+                font-size: initial;
+                height: initial;
+                width: auto;
+            }
+
+            .site-notice .site-notice__categories .cookie-category__label input[type="checkbox"]:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            .site-notice .site-notice__categories .cookie-category__name {
+                font-weight: bold;
+            }
+
+            .site-notice .site-notice__categories .cookie-category__description {
+                margin: 0;
+                font-size: 0.9em;
+                opacity: 0.8;
+            }
+
+            .site-notice .site-notice__categories .cookie-consent__save {
+                margin-top: 1rem;
+                padding: .75rem;
+            }
+
+            [dir="rtl"] .site-notice .site-notice__categories .cookie-consent__save {
+                text-align: left;
+            }
+
+            .site-notice .site-notice__categories .cookie-consent__save .cookie-consent__save-button {
+                padding: 6px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-size: 13px;
+                min-width: 100px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .site-notice .site-notice__categories .cookie-consent__save .cookie-consent__save-button:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .site-notice .site-notice__categories .cookie-consent__save .cookie-consent__save-button:active {
+                transform: translateY(0);
+            }
+
+            .site-notice .site-notice__actions {
+                display: flex;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                margin-left: auto;
+            }
+
+            [dir="rtl"] .site-notice .site-notice__actions {
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            .site-notice .site-notice__actions button {
+                padding: 6px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-size: 13px;
+                min-width: 100px;
+                text-align: center;
+            }
+
+            .site-notice .site-notice__actions button:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .site-notice .site-notice__actions button:active {
+                transform: translateY(0);
+            }
+
+            .site-notice .cookie-consent__actions .site-notice__reject {
+                font-weight: 500;
+                opacity: 0.95;
+            }
+
+            .site-notice .cookie-consent__actions .site-notice__reject:hover {
+                opacity: 1;
+            }
+
+            .site-notice .cookie-consent__actions .site-notice__customize {
+                font-weight: 500;
+                opacity: 0.95;
+            }
+
+            .site-notice .cookie-consent__actions .site-notice__customize:hover {
+                opacity: 1;
+            }
+
+            .site-notice .cookie-consent__actions .site-notice__customize.active {
+                opacity: 0.8;
+                transform: translateY(0);
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .site-notice .cookie-consent__actions .site-notice__agree {
+                font-weight: bold;
+                position: relative;
+            }
+
+            .site-notice .cookie-consent__actions .site-notice__agree:before {
+                content: '';
+                position: absolute;
+                inset: -2px;
+                border-radius: 6px;
+                background: rgba(255, 255, 255, 0.1);
+                z-index: -1;
+            }
+
+            @media (max-width: 767px) {
+                .site-notice .site-notice__inner {
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 0.75rem;
+                }
+
+                [dir="rtl"] .site-notice .site-notice__inner {
+                    flex-direction: column;
+                }
+
+                .site-notice .site-notice__actions {
+                    justify-content: center;
+                    margin-left: 0;
+                    gap: 0.4rem;
+                    flex-wrap: wrap;
+                }
+
+                [dir="rtl"] .site-notice .site-notice__actions {
+                    margin-right: 0;
+                }
+
+                .site-notice .site-notice__actions button {
+                    flex: none;
+                    min-width: 70px;
+                    max-width: 100px;
+                    padding: 6px 10px;
+                    font-size: 11px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    border-radius: 3px;
+                }
+            }
+      

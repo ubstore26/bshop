@@ -1,0 +1,420 @@
+
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@600&display=swap');
+
+
+*,
+::after,
+::before{
+    box-sizing: border-box;
+
+}
+
+
+html,
+body{
+    font-size: 20px;
+    font-family: var(--font-khmerNoto);
+    height: 100%;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #2b2b2b;
+    object-fit: cover;
+  
+}
+
+
+
+h1,h2, h4{
+  
+    font-size: 18px !important;
+    margin-bottom: 1.25rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #323232 !important;
+}
+
+
+
+.form-content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    column-gap: 30px;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.field .spectrum-Textfield{
+    height: 40px;
+    font-size: 15px;
+}
+
+.form{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    margin-top: 38px;
+}
+
+
+
+
+.field input.spectrum-Textfield {
+    background-color: #fff;
+    border-color: #eaeaea;
+    color: #505050
+}
+
+.spectrum--lightestfield  {
+     color: #959595 !important;
+}
+
+.field .spectrum-Textfield::-moz-placeholder {
+    color: #959595 !important;
+}
+
+.field.spectrum-Textfield:-ms-input-placeholder {
+    color: #959595 !important;
+}
+
+.field .spectrum-Textfield::-ms-input-placeholder {
+    color: #959595 !important;
+}
+
+.field.spectrum-Textfield--quiet {
+    background-color: rgba(0,0,0,0);
+    border-color: #eaeaea !important
+}
+.field
+.input[type=name]{
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    display: block;
+    appearance: none;
+    outline: none;
+    border-color:  #ccc;
+    -webkit-box-shadow: 0 1px 0 #ccc;
+    box-shadow: 0 1.5px 0 #ccc;
+    color: #747474;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    
+}
+
+.field input.spectrum-Textfield{
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    display: block;
+    appearance: none;
+    outline: none;
+    border-color:  #ccc;
+    -webkit-box-shadow: 0 1px 0 #ccc;
+    box-shadow: 0 1.5px 0 #ccc;
+    color: #747474;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    
+}
+.field .input-field{
+    padding: 15px 0;
+}
+.field.button-field{
+    margin: 15px 0;
+    min-height: 28px;
+    
+  }
+
+  .spectrum-Textfield--quiet {
+    border-radius: 0;
+    border-width: 0 0 1px;
+    padding-left: 0;
+    padding-right: 0;
+    resize: none;
+    overflow-y: hidden;
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+  .spectrum-FieldLabel {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+.field .spectrum-FieldLabel {
+    color: #747474 !important;
+}
+.field .spectrum-FieldLabel {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.field  input:focus{
+    
+    border-color: #40a7e3;
+    -webkit-box-shadow: 0 3px 0 #40a7e3;
+    box-shadow: 0 2px 0 #40a7e3;
+}
+
+
+
+.field .spectrum-FieldLabel {
+    padding-bottom: 0;
+    padding-top: 0
+}
+
+.field .spectrum-Textfield {
+    height: 28px;
+    padding-bottom: 0;
+    padding-top: 0;
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+
+
+
+  ::placeholder{
+    color: #6f6f6f;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.field ::placeholder.error{
+    color: #d7373f;
+}
+
+.field input.success{
+ 
+    border-color: #40a7e3;
+    -webkit-box-shadow: 0 3px 0 #40a7e3;
+    box-shadow: 0 2px 0 #40a7e3;
+}
+.field input.error{
+
+    border-color: #e34850;
+    -webkit-box-shadow: 0 3px 0 #e34850;
+    box-shadow: 0 2px 0 #e34850;
+}
+ .error{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #d7373f;
+    text-align: left;
+   
+}
+.fa-exclamation-triangle{
+    display: flex;
+    float: right;
+    margin-top: -25px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #d7373f;
+    overflow: hidden;
+    opacity: 0;
+    
+}
+.fa-exclamation-triangle.active{
+    opacity: 1;
+}
+
+
+.button-field{
+    line-height: 48px;
+}
+
+.btn.btn-dark:hover{
+    opacity: 0.9;
+}
+
+
+.btn.btn-dark{
+    font-family: var(--font-khmerNoto);
+    background-color: #40a7e3;
+    border-color: #40a7e3;
+    color: #fff;
+    border: 0;
+    border-style: none;
+    padding: 0;
+    margin-top: -2PX;
+    margin-bottom: -2PX;
+    width: 100%;
+    border-radius: 4px !important;
+}
+.btn {
+    border-width: 2px;
+    border-style: solid;
+    min-height: 38px;
+    height: auto;
+    padding: 3.5px 14px 4.5px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.btn{
+    margin-right: 0;
+}
+button, input {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+.cancel:hover{
+    opacity: 0.9;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+.alert ,.alert-register, .alert-forgot, .alert-verify, .alert-reset, .alert-changepass{
+    font-family: 'Noto Sans Khmer', sans-serif;
+    color: #ed3a3a;
+    transition: all 0.3S ease-in-out;
+    text-align: left;
+    font-size: 16px;
+    min-width: 350px;
+    height: auto;
+}
+
+
+.alert-success, .success-changePass{
+    font-size: 14px;
+    transition: all 0.3S ease-in-out;
+    text-align: left;
+    color: #28a745!important;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    
+}
+
+
+
+
+
+
+.form-link{
+    text-align: left;
+    line-height: 20px;
+}
+.form-link span,
+.form-link a{
+    font-size: 16px;
+    cursor: pointer;
+    color: #40a7e3;
+}
+.form-link span{
+    font-size: 16px;
+    color: #1b1b1b;
+}
+
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+a.google{
+    border: 1px solid #CACACA;
+}
+a.google span{
+    font-weight: 500;
+    opacity: 0.5;
+    color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  
+    .form{
+        padding: 20px 10px;
+    }
+
+ 
+    .btn{
+        min-height: 42px;
+    }
+    
+}
+
+
+@media (min-width: 1024px){
+
+    h2{
+        font-size: calc(--base-em) * var(--step4);
+    }
+    h1{
+        font-size: calc(--base-em) * var(--step5);
+    }
+    
+    
+    
+    .form{
+        display: grid;
+        place-items: center;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 0.5rem;
+    }
+    
+    
+    
+    }
+
+    @media screen and (max-width: 768px) {
+        .form .spectrum-Textfield {
+            font-size:19px
+        }
+
+        .btn{
+            min-height: 38px;
+        }
+    }
